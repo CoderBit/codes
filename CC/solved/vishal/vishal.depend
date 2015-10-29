@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1425633730 source:d:\hk\codeblocks\codechef\solved\vishal\main.cpp
+	<cmath>
+	<cstdio>
+	<iostream>
+	<algorithm>
+	<math.h>
+	<string.h>
+
