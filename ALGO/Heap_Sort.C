@@ -1,5 +1,6 @@
 #include<stdio.h>
-#include<conio.h>
+
+
 void makeheap(int a[],int n)
 {
     int i=1,t,temp;
@@ -53,7 +54,7 @@ void heapsort(int a[],int heap[],int n)
     }
 }
 
-void main()
+int main()
 {
     int a[100],heap[100],n,i,n1;
     scanf("%d",&n);
@@ -68,5 +69,6 @@ void main()
     {
         printf("%d ",heap[i]);
     }
+    return 0;
 
 }

@@ -3,13 +3,14 @@ using namespace std;
 
 int Partition(int ar[10],int low,int high)
 {
-    int pivot=ar[high];
-    int i=low-1;
+    int pivot=ar[high]; // pivot
+    int i=low-1;    // Index of smaller element (wall)
     for(int j=low;j<=high-1;j++)
     {
+        // If current element is smaller than or equal to pivot
         if(ar[j]<=pivot)
         {
-            i++;
+            i++;    // increment index of smaller element
             int temp=ar[i];
             ar[i]=ar[j];
             ar[j]=temp;
@@ -21,6 +22,7 @@ int Partition(int ar[10],int low,int high)
     return i+1;
 }
 
+/* arr[] --> Array to be sorted, low   --> Starting index, high  --> Ending index */
 void quicksort(int ar[10],int low,int high)
 {
     if(low<high)
